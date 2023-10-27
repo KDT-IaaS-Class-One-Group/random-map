@@ -41,6 +41,14 @@ document.addEventListener('DOMContentLoaded', () => {
       southWestLat: 37.301116,
       southWestLng: 126.604511
     },
+    {
+      name: 'Gwangjoo',
+      center: new naver.maps.LatLng(35.1595454,  126.8526017),
+      northEastLat: 35.239666,
+      northEastLng: 126.900758,
+      southWestLat: 35.103365,
+      southWestLng: 126.809647
+    },
     // 여기에 다른 도시 정보를 추가할 수 있습니다.
   ];
 
