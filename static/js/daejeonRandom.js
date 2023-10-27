@@ -13,15 +13,15 @@ document.addEventListener('DOMContentLoaded', () => {
     let southWestLng = 127.312206; // 최남서단 경도
     
     // 새로운 위치 랜덤하게 생성
-    let newLat = southWestLat + Math.random() * (northEastLat - southWestLat); //* 위도 범위 (37.0 ~ 39.0)
-    let newLng = southWestLng + Math.random() * (northEastLng - southWestLng); //* 경도 범위 (126.0 ~ 130.0)
+    let newLat = southWestLat + Math.random() * (northEastLat - southWestLat); 
+    let newLng = southWestLng + Math.random() * (northEastLng - southWestLng); 
 
     let newLocation = new naver.maps.LatLng(newLat, newLng);
 
     map.panTo(newLocation);
   }
 
-  const randomLocationBtn = document.getElementById('randomLocationBtn');
+  const randomLocationBtn = document.getElementById('randomDaejeonBtn');
 
   //* 버튼 클릭 시 랜덤 위치로 이동 함수 호출
 
