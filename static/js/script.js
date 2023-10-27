@@ -17,6 +17,14 @@ document.addEventListener('DOMContentLoaded', () => {
       southWestLat: 36.264035,
       southWestLng: 127.312206
     },
+    {
+      name: 'Busan',
+      center: new naver.maps.LatLng(35.1797765, 129.0750915),
+      northEastLat: 35.267355,
+      northEastLng: 129.517874,
+      southWestLat: 35.056588,
+      southWestLng: 128.961066
+    },
     // 여기에 다른 도시 정보를 추가할 수 있습니다.
   ];
 
