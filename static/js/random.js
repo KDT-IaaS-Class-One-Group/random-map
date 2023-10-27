@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //* 랜덤한 위치로 이동하는 함수
   function moveToRandomLocation() {
-    let newLat = 37.5 + Math.random() * 2; //* 위도 범위 (37.0 ~ 39.0)
-    let newLng = 126.0 + Math.random() * 4; //* 경도 범위 (126.0 ~ 130.0)
+    let newLat = 33 + Math.random() * 6; //* 위도 범위 (33.0 ~ 39.0)
+    let newLng = 125.0 + Math.random() * 6; //* 경도 범위 (125.0 ~ 131.0)
 
     let newLocation = new naver.maps.LatLng(newLat, newLng);
 
