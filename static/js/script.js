@@ -25,6 +25,71 @@ document.addEventListener('DOMContentLoaded', () => {
       southWestLat: 35.056588,
       southWestLng: 128.961066
     },
+    {
+      name: 'gyeonggi-do-suwon',
+      center: new naver.maps.LatLng(35.1797765, 129.0750915),
+      northEastLat: 37.347716,
+      northEastLng: 126.995243,
+      southWestLat: 37.226222,
+      southWestLng: 126.918138
+    },
+    {
+      name: 'Gangwon-do-Chuncheon',
+      center: new naver.maps.LatLng(35.1797765, 129.0750915),
+      northEastLat: 37.940661,
+      northEastLng: 127.735637,
+      southWestLat: 37.781740,
+      southWestLng: 127.481306
+    },{
+      name: 'Gyeongsangbuk-do-Pohang',
+      center: new naver.maps.LatLng(35.1797765, 129.0750915),
+      northEastLat: 36.122430,
+      northEastLng: 129.400489,
+      southWestLat: 35.969604,
+      southWestLng: 129.262939
+    },{
+      name: 'Gyeongnam-do-Changwon',
+      center: new naver.maps.LatLng(35.1797765, 129.0750915),
+      northEastLat: 35.270247,
+      northEastLng: 128.674256,
+      southWestLat: 35.210080,
+      southWestLng: 128.532914
+    },{
+      name: 'jeonbuk-jeonnam',
+      center: new naver.maps.LatLng(35.1797765, 129.0750915),
+      northEastLat: 35.854077,
+      northEastLng: 127.175448,
+      southWestLat: 35.749924,
+      southWestLng: 127.070723
+    },{
+      name: 'Jeollanam-do-Mokpo',
+      center: new naver.maps.LatLng(35.1797765, 129.0750915),
+      northEastLat: 34.829642,
+      northEastLng: 126.392926,
+      southWestLat: 34.775726,
+      southWestLng: 126.318919
+    },{
+      name: 'Chungcheongbuk-do-Cheongju',
+      center: new naver.maps.LatLng(35.1797765, 129.0750915),
+      northEastLat: 36.755025,
+      northEastLng: 127.180487,
+      southWestLat: 36.581349,
+      southWestLng: 127.331717
+    },{
+      name: 'Chungcheongnam-do-Cheonan',
+      center: new naver.maps.LatLng(35.1797765, 129.0750915),
+      northEastLat: 36.869354,
+      northEastLng: 127.137299,
+      southWestLat: 36.750046,
+      southWestLng: 127.069055
+    },{
+      name: 'Jeju Island-Jeju City',
+      center: new naver.maps.LatLng(35.1797765, 129.0750915),
+      northEastLat: 33.517928,
+      northEastLng: 126.525486,
+      southWestLat: 33.201673,
+      southWestLng: 126.194457
+    },
     // 여기에 다른 도시 정보를 추가할 수 있습니다.
   ];
 
