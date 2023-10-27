@@ -3,11 +3,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const cities = [
     {
       name: 'Seoul',
-      center: new naver.maps.LatLng(37.4562562, 126.7052062),
-      northEastLat: 37.645806,
-      northEastLng: 126.678674,
-      southWestLat: 37.301116,
-      southWestLng: 126.604511
+      center: new naver.maps.LatLng(37.5666102,  126.9783881),
+      northEastLat: 37.701857,
+      northEastLng: 127.148242,
+      southWestLat: 37.428725,
+      southWestLng: 126.767625
     },
     {
       name: 'Daejeon',
