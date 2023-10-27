@@ -1,14 +1,63 @@
-// script.js
-const mapOptions = {
-  center: new naver.maps.LatLng(37.5666102, 126.9783881), // 서울의 위도, 경도
-  zoom: 10 // 초기 확대 레벨
-};
+document.addEventListener('DOMContentLoaded', () => {
+  // 도시 정보를 객체 배열로 정의
+  const cities = [
+    {
+      name: 'Seoul',
+      center: new naver.maps.LatLng(37.4562562, 126.7052062),
+      northEastLat: 37.645806,
+      northEastLng: 126.678674,
+      southWestLat: 37.301116,
+      southWestLng: 126.604511
+    },
+    {
+      name: 'Daejeon',
+      center: new naver.maps.LatLng(36.350214, 127.384548),
+      northEastLat: 36.414012,
+      northEastLng: 127.593538,
+      southWestLat: 36.264035,
+      southWestLng: 127.312206
+    },
+    {
+      name: 'Busan',
+      center: new naver.maps.LatLng(35.1797765, 129.0750915),
+      northEastLat: 35.267355,
+      northEastLng: 129.517874,
+      southWestLat: 35.056588,
+      southWestLng: 128.961066
+    },
+    // 여기에 다른 도시 정보를 추가할 수 있습니다.
+  ];
 
-const map = new naver.maps.Map('map', mapOptions);
+  let currentCityIndex = 0; // 초기 도시 인덱스 설정
 
-// 지도에 마커 추가 예제
-const marker = new naver.maps.Marker({
-  position: new naver.maps.LatLng(37.5666102, 126.9783881),
-  map: map
+  let map = new naver.maps.Map('map', {
+    center: cities[currentCityIndex].center,
+    zoom: 15,
+  });
+
+  // 랜덤한 위치로 이동하는 함수
+  function moveToRandomLocation() {
+    const city = cities[currentCityIndex];
+    const newLat = city.southWestLat + Math.random() * (city.northEastLat - city.southWestLat);
+    const newLng = city.southWestLng + Math.random() * (city.northEastLng - city.southWestLng);
+    const newLocation = new naver.maps.LatLng(newLat, newLng);
+
+    map.panTo(newLocation);
+  }
+
+  const randomLocationBtn = document.getElementById('randomLocationBtn');
+
+  // 버튼 클릭 시 랜덤 위치로 이동 함수 호출
+  randomLocationBtn.addEventListener('click', moveToRandomLocation);
+
+  // 다음 도시로 이동하는 함수
+  function moveToNextCity() {
+    currentCityIndex = (currentCityIndex + 1) % cities.length;
+    map.setCenter(cities[currentCityIndex].center);
+  }
+
+  const nextCityBtn = document.getElementById('nextCityBtn');
+
+  // 버튼 클릭 시 다음 도시로 이동 함수 호출
+  nextCityBtn.addEventListener('click', moveToNextCity);
 });
-
