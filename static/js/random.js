@@ -6,13 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //* 랜덤한 위치로 이동하는 함수
   function moveToRandomLocation() {
-    let newLat = 33 + Math.random() * 6; //* 위도 범위 (33.0 ~ 39.0)
-    let newLng = 125.0 + Math.random() * 6; //* 경도 범위 (125.0 ~ 131.0)
+    let newLat = 33.10000000 + Math.random() * 5.45000000; //* 위도 범위 (33.0 ~ 38.0)
+    let newLng = 125.06666667 + Math.random() * 6.87222222; //* 경도 범위 (125.0 ~ 131.0)
 
     let newLocation = new naver.maps.LatLng(newLat, newLng);
 
     map.panTo(newLocation);
-    map.setZoom(10 + Math.floor(Math.random() * 5));
+    // map.setZoom(10 + Math.floor(Math.random() * 5));
+    map.setZoom(13);
   }
 
   const randomLocationBtn = document.getElementById('randomLocationBtn');
