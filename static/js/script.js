@@ -49,6 +49,14 @@ document.addEventListener('DOMContentLoaded', () => {
       southWestLat: 35.103365,
       southWestLng: 126.809647
     },
+    {
+      name: 'Ulsan',
+      center: new naver.maps.LatLng(35.5383773,  129.3113607),
+      northEastLat: 35.597795,
+      northEastLng: 129.365053,
+      southWestLat: 35.464000,
+      southWestLng: 129.299386
+    },
     // 여기에 다른 도시 정보를 추가할 수 있습니다.
   ];
 
