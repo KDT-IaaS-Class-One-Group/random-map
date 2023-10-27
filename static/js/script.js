@@ -25,6 +25,22 @@ document.addEventListener('DOMContentLoaded', () => {
       southWestLat: 35.056588,
       southWestLng: 128.961066
     },
+    {
+      name: 'Daegoo',
+      center: new naver.maps.LatLng(35.8713804, 128.6017431),
+      northEastLat: 35.925042,
+      northEastLng: 128.713877,
+      southWestLat: 35.758222,
+      southWestLng: 128.413634
+    },
+    {
+      name: 'Incheon',
+      center: new naver.maps.LatLng(37.4562562, 126.7052062),
+      northEastLat: 37.645806,
+      northEastLng: 126.678674,
+      southWestLat: 37.301116,
+      southWestLng: 126.604511
+    },
     // 여기에 다른 도시 정보를 추가할 수 있습니다.
   ];
 
