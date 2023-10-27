@@ -57,6 +57,14 @@ document.addEventListener('DOMContentLoaded', () => {
       southWestLat: 35.464000,
       southWestLng: 129.299386
     },
+    {
+      name: 'Sejong',
+      center: new naver.maps.LatLng(36.481724,  127.287122),
+      northEastLat: 36.640130,
+      northEastLng: 127.442458,
+      southWestLat: 36.432992,
+      southWestLng: 127.312920
+    },
     // 여기에 다른 도시 정보를 추가할 수 있습니다.
   ];
 
