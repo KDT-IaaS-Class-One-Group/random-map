@@ -11,3 +11,4 @@ const marker = new naver.maps.Marker({
   position: new naver.maps.LatLng(37.5666102, 126.9783881),
   map: map
 });
+
