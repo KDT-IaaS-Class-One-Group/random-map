@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
       this.southWestLng = southWestLng;
     }
   }
+  
   // const cities = [
   //   {
   //     name: 'Seoul',
