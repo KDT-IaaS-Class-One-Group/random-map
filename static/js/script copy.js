@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 도시 정보를 객체 배열로 정의
   
   // 도시 정보 생성자 함수
-  class Cities {
+  class City {
     constructor(name, center, northEastLat, northEastLng, southWestLat, southWestLng) {
       this.name = name;
       this.center = new naver.maps.LatLng(center.lat, center.lng);
@@ -12,7 +12,13 @@ document.addEventListener('DOMContentLoaded', () => {
       this.southWestLng = southWestLng;
     }
   }
-  
+
+  // 도시 정보 배열 생성
+  const cities = [
+    new City('Seoul', { lat: 37.5666102, lng: 126.9783881 }, 37.701857, 127.148242, 37.428725, 126.767625),
+    // 여기에 다른 도시 정보 추가 가능
+  ]
+
   // const cities = [
   //   {
   //     name: 'Seoul',
