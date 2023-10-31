@@ -28,3 +28,78 @@ setZoom(지도 화면 확대/축소 레벨 조정)
 4-2. 도시 기준으로 이동해보기<br>
 4-3 지도 영역을 제한해서 이동해보기<br>
 ++ AJAX,JSON 등 접목하여 비동기적으로 구현하기
+
+# Git Commit
+**1. 이모지와 커밋 메시지 종류 예시:**
+
+- 🚀 **Feat**: 새로운 기능 추가
+    
+    ```
+    git commit -m "🚀 Feat: Add user registration functionality"
+    
+    ```
+    
+- 🐛 **Fix**: 버그 수정
+    
+    ```
+    git commit -m "🐛 Fix: issue with login button not working"
+    
+    ```
+    
+- 📝 **Docs**: 문서 업데이트
+    
+    ```
+    git commit -m "📝 Docs: Update installation guide"
+    
+    ```
+    
+- 💄 **Style**: 코드 스타일 변경
+    
+    ```
+    git commit -m "💄 Style: Format code using Prettier"
+    
+    ```
+    
+- 🛠️ **Refactor**: 코드 리팩터링
+    
+    ```
+    git commit -m "🛠️ Refactor: Simplify the data processing function"
+    
+    ```
+    
+- 🧪 **Test**: 테스트 코드 추가 또는 수정
+    
+    ```
+    git commit -m "🧪 Test: Add unit tests for authentication module"
+    
+    ```
+    
+- ⏪ **Revert**: 이전 커밋 되돌리기
+    
+    ```
+    git commit -m "⏪ Revert: Revert the previous commit"
+    
+    ```
+    
+- 🚧 **WIP (Work in Progress)**: 아직 완료되지 않은 작업
+    
+    ```
+    git commit -m "🚧 WIP: Work on feature XYZ (not ready for production)"
+    
+    ```
+    
+- 📦 **Build**: 빌드 프로세스 또는 도구 관련 업데이트
+    
+    ```
+    git commit -m "📦 Build: Update Webpack configuration"
+    
+    ```
+    
+- ⚙️ **Config**: 설정 파일 변경
+    
+    ```
+    git commit -m "⚙️ Config: Update database configuration"
+    
+    ```
+    
+- 📱 **Mobile**: 모바일 앱 관련 변경
