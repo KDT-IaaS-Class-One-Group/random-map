@@ -103,3 +103,9 @@ setZoom(지도 화면 확대/축소 레벨 조정)
     ```
     
 - 📱 **Mobile**: 모바일 앱 관련 변경
+    
+    ```
+    git commit -m "📱 Mobile: Improve user interface on mobile devices"
+    
+    ```
+        
