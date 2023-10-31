@@ -3,13 +3,13 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // 도시 정보 생성자 함수
   class Cities {
-    constructor(name, center, northEastLat, northEastLng, southWestLat, SouthWestLng) {
+    constructor(name, center, northEastLat, northEastLng, southWestLat, southWestLng) {
       this.name = name;
       this.center = new naver.maps.LatLng(center.lat, center.lng);
       this.northEastLat = northEastLat;
       this.northEastLng = northEastLng;
       this.southWestLat = southWestLat;
-      this.southWestLng = southWestLat;
+      this.southWestLng = southWestLng;
     }
   }
   // const cities = [
