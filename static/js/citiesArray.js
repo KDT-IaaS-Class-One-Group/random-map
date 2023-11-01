@@ -1,4 +1,4 @@
-const cities = [
+const citiesArray = [
   {name: 'Seoul', center:{lat: 37.5666102, lng: 126.9783881}, northEast: {lat: 37.701857, lng: 127.148242}, southWest: {lat: 37.428725, lng:126.767625}},
   {name: 'Daejeon', center:{lat: 37.5666102, lng: 126.9783881}, northEast: {lat: 37.701857, lng: 127.148242}, southWest: {lat: 37.428725, lng:126.767625}},
   {name: 'Busan', center:{lat: 37.5666102, lng: 126.9783881}, northEast: {lat: 37.701857, lng: 127.148242}, southWest: {lat: 37.428725, lng:126.767625}},
@@ -19,4 +19,4 @@ const cities = [
 ];
 
 
-module.exports = cities;
+export {citiesArray};
