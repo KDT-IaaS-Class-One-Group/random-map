@@ -1,16 +1,11 @@
-// const citieArray = require('./static/js/citiesArray.js');
-// const City = require('./static/js/cityClass.js');
-
 import { citiesArray } from './citiesArray.js';
 import City from './cityClass.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   // 도시 정보를 객체 배열로 정의
+  let currentCityIndex = 0;
 
   citiesArray.forEach((cityData) => {
-    const newCity = new City(cityData.name, cityData.center, cityData.northEast, cityData.southWest);
-
-    let currentCityIndex = 0; // 초기 도시 인덱스 설정
 
     let map = new naver.maps.Map('map', {
       center: cityData.center,
@@ -19,9 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 랜덤한 위치로 이동하는 함수
     function moveToRandomLocation() {
-      const city = newCity[currentCityIndex];
-      const newLat = city.southWest.lat + Math.random() * (city.northEast.lat - city.southWest.lat);
-      const newLng = city.southWest.lng + Math.random() * (city.northEast.lng - city.southWest.lng);
+      const newLat = cityData.southWest.lat + Math.random() * (cityData.northEast.lat - cityData.southWest.lat);
+      const newLng = cityData.southWest.lng + Math.random() * (cityData.northEast.lng - cityData.southWest.lng);
       const newLocation = new naver.maps.LatLng(newLat, newLng);
 
       map.panTo(newLocation);
@@ -34,8 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 다음 도시로 이동하는 함수
     function moveToNextCity() {
-      currentCityIndex = (currentCityIndex + 1) % newCity.length;
-      map.setCenter(newCity[currentCityIndex].center);
+      currentCityIndex = (currentCityIndex + 1) % citiesArray.length;
+      const nextCity = citiesArray[currentCityIndex];
+      map.setCenter(nextCity.center);
     }
 
     const nextCityBtn = document.getElementById('nextCityBtn');
