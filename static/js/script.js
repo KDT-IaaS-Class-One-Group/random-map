@@ -1,4 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // 환경변수에서 MAP_CLIENT_ID 값 가져오기
+  const mapClientId = process.env.MAP_CLIENT_ID;
+
+  console.log(mapClientId); 
+
+  // Naver Maps API 동적으로 로드하기
+  const script = document.createElement('script');
+  script.src = `https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=${mapClientId}`;
+  script.async = true;
+  document.head.appendChild(script);
+  
   // 도시 정보를 객체 배열로 정의
   
   // 도시 정보 생성자 함수
