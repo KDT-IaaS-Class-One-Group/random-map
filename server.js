@@ -5,13 +5,16 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
+// 네이버 지도 API를 사용하기 위한 코드
+const mapClientId = process.env.MAP_CLIENT_ID;
+
+
 app.use('/static',express.static(path.join(__dirname, 'static')));
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-  const mapClientId = process.env.MAP_CLIENT_ID;
   res.sendFile(path.join(__dirname, 'static', 'index.html'))
 });
 
