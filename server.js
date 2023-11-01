@@ -11,7 +11,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'static', 'index.html'));
+  res.sendFile(path.join(__dirname, 'static', 'index.html'))
+  const mapClientId = process.env.MAP_CLIENT_ID;console.log(mapClientId);
 });
 
 app.listen(port, () => {
