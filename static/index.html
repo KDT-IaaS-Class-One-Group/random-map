@@ -11,9 +11,16 @@
   <button id="randomLocationBtn">랜덤 위치로 이동</button>
   <button id="nextCityBtn">다음 도시로 이동</button>
   <script>
-    const mapClientID = "<%= mapClientId %>"; // 서버에서 전달받은 값
+    const mapClientId = "<%= mapClientId %>"; // 서버에서 전달받은 값
+    console.log(mapClientId); 
+    // Naver Maps API 동적으로 로드하기
+
+    const script = document.createElement('script');
+
+    script.src = `https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=${mapClientID}`;
+    script.async = true;
+    document.head.appendChild(script);
   </script>
-  <script src= "https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=mo795feswb"></script>
   <script src="/static/js/script.js"></script>
 </body>
 </html>
