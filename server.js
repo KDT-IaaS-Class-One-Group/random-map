@@ -7,7 +7,9 @@ const port = 3000;
 
 // 네이버 지도 API를 사용하기 위한 코드
 const mapClientId = process.env.MAP_CLIENT_ID;
-
+const naver = require('@navercorp/mapjs-sdk')({
+  apikey: mapClientId
+});
 
 app.use('/static',express.static(path.join(__dirname, 'static')));
 
