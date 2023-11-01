@@ -10,7 +10,10 @@
   <div id="map"></div>
   <button id="randomLocationBtn">랜덤 위치로 이동</button>
   <button id="nextCityBtn">다음 도시로 이동</button>
-  <script src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=mo795feswb"></script>
+  <script>
+    const mapClientID = "<%= mapClientId %>"; // 서버에서 전달받은 값
+  </script>
+  <script src= "https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=mo795feswb"></script>
   <script src="/static/js/script.js"></script>
 </body>
 </html>
