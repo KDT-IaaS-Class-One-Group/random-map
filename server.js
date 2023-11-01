@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'static', 'index.html'))
-  const mapClientId = process.env.MAP_CLIENT_ID;console.log(mapClientId);
+  const mapClientId = process.env.MAP_CLIENT_ID;res.render('index', {mapClientId});
 });
 
 app.listen(port, () => {
