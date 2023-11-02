@@ -33,4 +33,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 버튼 클릭 시 다음 도시로 이동 함수 호출
   nextCityBtn.addEventListener('click', moveToNextCity);
+
+  // 다음 도시를 랜덤으로 이동하는 함수
+  function moveToRandomNextCity() {
+    const randomCityIndex = Math.floor(Math.random() * cities.length);
+    moveToLocation(map, cities[randomCityIndex].center.lat(), cities[randomCityIndex].center.lng());
+    const cityName = cities[randomCityIndex].name;
+    const text = document.getElementById('text');
+    text.innerHTML = `"어서오세요! 이곳은 ${cityName}입니다."`
+  }
+
+  const randomCityBtn = document.getElementById('randomCityBtn');
+
+  // 버튼 클릭 시 다음 도시를 랜덤으로 이동 함수 호출
+  randomCityBtn.addEventListener('click', moveToRandomNextCity);
 });
