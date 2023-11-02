@@ -2,3 +2,5 @@
 /node_modules
 /package-lock.json
 /static/js/script2.js
+/static/js/script-t.js
+/static/js/citiesRepeated.js
