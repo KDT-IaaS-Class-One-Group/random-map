@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // 랜덤한 위치로 이동하는 함수
   function moveToRandomLocation() {
     const city = cities[currentCityIndex];
-    console.log(city)
     const newLat = city.southWestLat + Math.random() * (city.northEastLat - city.southWestLat);
     const newLng = city.southWestLng + Math.random() * (city.northEastLng - city.southWestLng);
     moveToLocation(map, newLat, newLng);
@@ -25,6 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
   function moveToNextCity() {
     currentCityIndex = (currentCityIndex + 1) % cities.length;
     moveToLocation(map, cities[currentCityIndex].center.lat(), cities[currentCityIndex].center.lng());
+    const cityName = cities[currentCityIndex].name;
+    const text = document.getElementById('text');
+    text.innerHTML = `"어서오세요! 이곳은 ${cityName}입니다."`
   }
 
   const nextCityBtn = document.getElementById('nextCityBtn');
