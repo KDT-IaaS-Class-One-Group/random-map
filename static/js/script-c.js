@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 랜덤한 위치로 이동하는 함수
   function moveToRandomLocation() {
     const city = cities[currentCityIndex];
+    console.log(city)
     const newLat = city.southWestLat + Math.random() * (city.northEastLat - city.southWestLat);
     const newLng = city.southWestLng + Math.random() * (city.northEastLng - city.southWestLng);
     moveToLocation(map, newLat, newLng);
