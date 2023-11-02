@@ -1,4 +1,4 @@
-export class City {
+export default class City {
   constructor(name, center, northEastLat, northEastLng, southWestLat, southWestLng) {
     this.name = name;
     // this.center = new naver.maps.LatLng{ center.lat, center.lng };
